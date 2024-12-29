@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: coral;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.product-button a{
+    display: block;
+    padding: 15px 20px;
+    background-color: #f69858;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.product-button a:hover {
+    background-color: #f69858;
+
+}
+
+#cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #f69858;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: beige;
+    padding: 10px;
+}
+
+.cart-modal {
+    display:flexbox
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-content{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.cart-items{
+    list-style: none;
+    padding: 0;
+}
+
+.cart-items li {
+    padding: 10px 0;
+    border-bottom: 1 px solid gray;
+}
+
+.checkout {
+    background-color: #f69858;
+    color: antiquewhite;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#total{
+    margin-top: 15px;
+    font-weight: 900;
+    color: black;
+}
+
+#close-cart{
+    cursor: pointer;
+    font-size: 45px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: aliceblue;
+}
+
+.purchase-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkolivegreen;
+    align-items: center;
+}
+
+
+.purchase-content{
+ background-color: aliceblue;
+ padding: 20px;
+ border-radius: 10px;
+ text-align: center;
+ width: 300px;  
+}
+
+.purchase-modal h2{
+    margin-bottom: 15px;
+}
+
+.purchase-content button{
+    background-color: #f69858;
+    color:aliceblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width:991px){
+    body {
+        padding: 30px;
+    }
+    .products{
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}

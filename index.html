@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+ <title>Tienda de Comercio Electrónico</title>
+</head>
+<body>
+
+    <header>
+    
+            
+            <a href="#" id="cart-icon"> <i class="fa-solid fa-cart-shopping"></i>Ver Carrito</a>
+
+            <div id="cart-modal" class="cart-modal">
+                <div class="cart-content">
+                    <span id="close-cart" class="close-cart">&times;</span>
+                    <h2>CARRITO DE COMPRAS</h2>
+                    <ul id="cart-items"></ul>
+                    <p id="total">Total: $0</p>
+                    <button id="checkout">Finalizar Compra</button>
+                </div>
+            </div>
+        
+            <div id="purchase-modal" class="purchase-modal">
+        
+                <div class="purchase-content">
+                    <h2>¡Compra Finalizada!</h2>
+                    <p> Gracias por su compra.</p>
+                    <button id="close-purchase">Cerrar</button>
+                </div>
+            </div>  
+    
+    
+    </header>
+
+    <section class="products container">
+        
+        <div class="card-product">
+            <div class="informacion">
+                <h2>NOTEBOOOK</h2>
+                <p class="PRECIO"> $500</p>
+            </div>
+
+            <div class="product-button">
+                <a href="#" class="add-to-cart "> Añadir al Carrito</a>
+            </div>
+        </div>
+
+        <div class="card-product">
+            <div class="informacion">
+                <h2>CELULAR</h2>
+                <p class="PRECIO"> $200</p>
+            </div>
+
+            <div class="product-button">
+                <a href="#" class="add-to-cart "> Añadir al Carrito</a>
+            </div>
+        </div>
+
+        <div class="card-product">
+            <div class="informacion">
+                <h2>PHONOS</h2>
+                <p class="PRECIO"> $100</p>
+            </div>
+
+            <div class="product-button">
+                <a href="#" class="add-to-cart "> Añadir al Carrito</a>
+            </div>
+        </div>
+
+    <script src="mains.js"></script>
+</body>
+</html>
